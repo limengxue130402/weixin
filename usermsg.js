@@ -59,4 +59,11 @@ router.post('/wx/msg', async c => {
 
 });
 
+
+if(process.argv.indexOf('-d')>0){
+    app.config.daemon = true;
+    app.config.showLoadInfo = true;
+}
+
+
 app.run(8002, 'localhost');
