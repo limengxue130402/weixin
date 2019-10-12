@@ -66,4 +66,4 @@ if(process.argv.indexOf('-d')>0){
 }
 
 
-app.run(8002, 'localhost');
+app.daemon(8002, 'localhost');
